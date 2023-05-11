@@ -41,8 +41,9 @@ const empty = () => {
 
 const addNextValue = () => {
 	if (!empty) {
+		// console.log('you loose')
 		return;
-	}
+	} 
 
 	let found = false;
 	while (!found) {
@@ -102,7 +103,7 @@ const leftMove = () => {
 			if (rows[a] === rows[a + 1]) {
 				rows[a] *= 2;
 				rows[a + 1] = 0;
-			}
+			} 
 		}
 
 		rows = clearZeros(rows);
